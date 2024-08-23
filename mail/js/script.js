@@ -14,9 +14,24 @@ loginBtn.addEventListener('click', function() {
   for (let i = 0; i < emailList.length; i++) {
     if (userEmail === emailList[i]) {
       result = true;
-      
     } 
   }
+
+  /********************************
+  COME POTREBBE ESSERE RISCRITTO IL CODICE
+  *********************************/
+
+  // if(emailList.includes(userEmail)) {
+  //   result = true;
+  // }
+
+  // OR
+
+  // const result = emailList.includes(userEmail);
+
+  /********************************
+  COME POTREBBE ESSERE RISCRITTO IL CODICE
+  *********************************/
 
   if (result) {
       console.log('puoi accedere');
@@ -24,10 +39,7 @@ loginBtn.addEventListener('click', function() {
   } else {
       console.log('Non puoi accedere');
       alert('Non puoi accedere')
-
   }
-
-
 })
 
 
